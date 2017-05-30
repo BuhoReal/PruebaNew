@@ -16,7 +16,9 @@ ON
 a.nu_pedido_pu=b.nu_pedido_pu     AND
         a.nu_subpedido_pu=b.nu_subpedido_pu     AND
         a.nu_servicio_pu=b.nu_servicio_pu
-WHERE co_prse = '50478' AND nu_contratable = '1' AND co_op_comercial IN( '001','204')
+WHERE co_prse = '50478' 
+  AND nu_contratable = '1' 
+  -- AND co_op_comercial IN( '001','204')
 GROUP BY 1,2,3,4
 
 
